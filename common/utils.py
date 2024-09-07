@@ -28,3 +28,6 @@ def gen_date_pair_by_days(last_n_days):
     return gen_date_pair(gen_today_date(), last_n_days)
 def gen_date_pair_by_end_days(end_date, last_n_days):
     return gen_date_pair(end_date, last_n_days)
+
+def build_fund_code_file_name(fund_code_str):
+    return str(fund_code_str) + ".csv"
