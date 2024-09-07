@@ -1,6 +1,3 @@
 from .calc import *
-from .load import *
-
-
-if __name__ == '__main__':
-    df = load_all_open_fund_basic_info()
+from .load_data_from_akshare import *
+from .load_data_from_disk import *

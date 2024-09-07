@@ -1,5 +1,5 @@
 from common.utils import *
-from core.load import *
+from core.load_data_from_akshare import *
 from datetime import timedelta
 
 def calc_single_fund_gain(data, buy_fee_rate, start_date, end_date, log=False):

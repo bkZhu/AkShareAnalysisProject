@@ -29,9 +29,10 @@ def save_df_to_csv(df_data, relative_data_path, file_name):
         print(f"The path {absolute_data_path} is not a directory.")
 
 
-
 ## save all open funds data to disk
-
-if __name__ == '__main__':
+def save_latest_open_fund_base_data():
     df_data = load_all_open_fund_basic_info()
     save_df_to_csv(df_data, DATA_PATH, 'all_open_funds_base_data.csv')
+
+if __name__ == '__main__':
+    save_latest_open_fund_base_data()
